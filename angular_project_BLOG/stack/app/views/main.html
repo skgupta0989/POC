@@ -1,0 +1,72 @@
+<div class="header">
+  <h1>Bloggers Community</h1>
+    <div id="login" class="row marginn">
+        <form name="myForm" role="form" novalidate>
+                <div class="form-group col-md-5" ng-class="{ 'has-error' : myForm.email.$invalid && !myForm.email.$pristine}">
+                    <label for="InputEmail">Email address</label>
+                    <input ng-model="login.email" type="email" name="email" class="form-control" id="InputEmail" placeholder="Enter email" >
+                    <p ng-show="myForm.email.$invalid && !myForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                </div>
+            
+                <div class="form-group col-md-5">
+                    <label for="InputPassword">Password</label>
+                    <input ng-model="login.password"  class="form-control" id="InputPassword" placeholder="Password" required="">
+                </div>
+                
+                <div class="form-group col-md-2 btn-marg" >
+                   <button type="button" id="butt" class="btn btn-primary " ng-disabled="myForm.$invalid" ng-click="validate()">Login</button>
+               </div>
+          </form>
+      </div>
+  
+  <hr style="border: 1px solid green">
+  <div class="header" >
+            <h3>Create an Account</h3>
+            <div class="col-md-offset-2 col-md-8 col-md-offset-2 ">
+                <form name="regForm" role="form" novalidate>
+                      
+                           <div class="form-group" ng-class="{ 'has-error' : regForm.name.$invalid && !regForm.name.$pristine }">
+                                <label for="name">Name</label>
+                                <input ng-model="regName"  id="name"   type="text" name="name" class="form-control"  placeholder="Enter name" required/>
+                                <p ng-show="regForm.name.$invalid && !regForm.name.$pristine" class="help-block">name is required.</p>
+                           </div>
+                            <br>
+                           <div class="form-group" ng-class="{ 'has-error' : regForm.number.$invalid && !regForm.number.$pristine }">
+                                <label for="tel">Phone Number</label>
+                                <input ng-model="regNum" id="tel" type="number" name="number"  class="form-control" ng-minlength="10" ng-maxlength="10" placeholder="Enter number"/>
+                                <p ng-show="regForm.number.$error.minlength" class="help-block">number should be of 10 digit.</p>
+                                <p ng-show="regForm.number.$error.maxlength" class="help-block">number should be of 10 digit.</p>
+                            </div>
+                            <br>
+                            <div class="form-group" ng-class="{ 'has-error' : regForm.email.$invalid && !regForm.email.$pristine}">
+                                <label for="email">Email</label>
+                                <input ng-model="regEmail" id="email" name="email" type="email" class="form-control"  placeholder="Enter email"/>
+                                <p ng-show="regForm.email.$invalid && !regForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                            </div>
+                            <br>
+                            <div class="form-group" ng-class="{ 'has-error' : regForm.password.$invalid && !regForm.password.$pristine }">
+                                <label for="password">Password</label>
+                                <input ng-model="regPass" id="password"  name="password" class="form-control" ng-minlength="3" ng-maxlength="8" type="password" placeholder="Enter password"/>
+                                <p ng-show="regForm.password.$error.minlength" class="help-block">password should be atleast 3 character.</p>
+                                <p ng-show="regForm.password.$error.maxlength" class="help-block">password should be atmost 8 character.</p>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="confpassword">Password</label>
+                                <input ng-model="regConfPass" id="confpassword"  class="form-control" type="password" placeholder="Confirm password"/>
+                            </div>
+                            <br>
+
+                            <div>
+                                <button type="button" id="RegButt" class="btn btn-primary " ng-disabled="regForm.$invalid" ng-click="register()">Register</button>
+                            </div>
+                     
+
+                </form>
+           </div>
+  </div>
+  
+</div>
+
+
+ 

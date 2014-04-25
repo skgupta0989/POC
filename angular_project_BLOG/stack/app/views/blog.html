@@ -1,0 +1,108 @@
+
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation" >
+        <div class="container-fluid">
+        <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">Bloggers Community</a>
+            </div>
+        
+        
+        <div  class="navbar-collapse collapse " >
+            
+            <form class="navbar-form navbar-left " role="search">
+<!--                <span style="color: black"><b>Bloggers Community</b></span> -->
+
+                <div class="form-group ">
+                    <input type="text" ng-model="searchBlog" class="form-control" placeholder="Search Blog">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+             
+            </form>
+            
+       
+             <ul class="nav navbar-nav navbar-right">
+                <li><a  style="color: black" href="">{{username}}</a></li>
+                <li><a style="color: black" href="" ng-click="profile();">Profile</a></li>
+                <li><a style="color: black" href="" ng-click="logout();">Logout</a></li>
+
+            </ul>
+        </div>
+        </div>    
+    </nav>
+    
+
+
+<div >
+   
+    <div id="heading">
+        <h2>Write your blog</h2>
+    </div>
+    <!--<div class="row ">-->
+
+        <form action="" >
+            <textarea id="comment" style="resize: vertical;width: 100% "  ng-model="postText">
+                    
+            </textarea>
+
+
+        </form>
+
+
+    <!--</div>-->
+    <div id="postbutt">
+        <button type="button" id="postbutton" class="btn btn-primary " ng-click="postBlog()">Post</button>
+    </div>
+
+    <div class="clearfix">
+
+    </div>
+
+    <hr class="line" style="border: 1px solid green">
+
+    <div class="clearfix">
+
+    </div>
+
+
+
+    <div id="commentDivAB" class="col-md-12"  ng-repeat="post in posts | filter:searchBlog track by $index">
+
+
+        <p class="commentDiv1"><b>Id:</b>{{post._id}}<br><b> Blogger:</b>{{post.name}} <br><b>Blog:</b>{{post.blog}}</p>
+        
+        <div class="col-md-12">
+            <button onload="likeButtonName(post)" type="btn" class="btn btn-default" ng-click="likePostOrUnlike(post)">{{post.buttonName}}</button>
+        <button type="btn" class="btn btn-default" ng-click="postComment(commentDiv,post)">Comment</button>
+            <span >&nbsp;&nbsp;&nbsp;&nbsp;Likes &nbsp;{{post.like}}</span>
+        </div>
+      
+        <div class="col-md-offset-2 col-md-8 commentStatus" style="width:65%;background-color: #ccffff"  ng-repeat="post1 in post.comments track by $index">
+            <p class="textup" ng-model="post1">{{post1}}<br/>
+            
+                <a style="color: black" href="" ng-click="commentLike();">Like</a><span>&nbsp;&nbsp;{{commentLikes}}</span></p>
+            
+        </div>
+        <br/><br/>
+        <form ng-submit="postComment(commentDiv,post)" class="col-md-offset-2 col-md-8">
+            <input type="text" ng-model="commentDiv" class="form-control" placeholder="post your comment">   
+            
+        </form>
+        <div class="col-md-12">
+            <hr class="line1" style="border: 1px solid green">
+        </div>
+<!--        <br>
+        <br>
+        <br>-->
+        
+    </div>  
+
+</div>
+
+

@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html class="no-js"> 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/blog.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="stackApp">
+   
+    <!-- Add your site or application content here -->
+    <div class="container" ng-view="" ></div>
+
+  
+    
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/blog.js"></script>
+        <script src="factory/sharedServices.js"></script>
+        <script src="scripts/bootstrap.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
