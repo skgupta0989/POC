@@ -21,11 +21,12 @@
 
     [PFUser enableAutomaticUser];
     
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+  
+    
     PFACL *defaultACL = [PFACL ACL];
-    
-    
-//    [defaultACL setPublicReadAccess:YES];
-    
+    [defaultACL setPublicReadAccess:YES];
+    [defaultACL setPublicWriteAccess:YES];
     [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
     
     [application registerForRemoteNotificationTypes:
@@ -34,6 +35,7 @@
                         UIRemoteNotificationTypeSound];
 
     return YES;
+    
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {

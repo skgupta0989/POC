@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
     
-    self.navigationController.navigationBar.barTintColor = [UIColor grayColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
     
     if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
@@ -76,20 +76,22 @@
 
 - (IBAction)SignInButtonClicked:(id)sender {
     NSLog(@"%@",self.userNameText.text);
-    
+    [_activityIndicator startAnimating];
     [PFUser logInWithUsernameInBackground:self.userNameText.text password:self.passWordText.text block:^(PFUser *user, NSError *error) {
         
         if (user) {
             // Do stuff after successful login.
-           
+            NSLog(@"username - %@",user.username);
             self.userNameText.text = @"";
             self.passWordText.text = @"";
+            [_activityIndicator stopAnimating];
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
         UserInfoViewController *infoView = [storyboard instantiateViewControllerWithIdentifier:@"UserInfoViewController"];
         [self.navigationController pushViewController:infoView animated:YES];
             
         } else {
             // The login failed. Check error to see why.
+            [_activityIndicator stopAnimating];
             UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Error" message:@"Login Failed" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
             [alert show];
             

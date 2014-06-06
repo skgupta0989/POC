@@ -7,6 +7,7 @@
 //
 #import <Parse/Parse.h>
 #import "ParseSignUpViewController.h"
+#import "UserInfoViewController.h"
 
 @implementation ParseSignUpViewController
 
@@ -39,6 +40,11 @@
             self.passWordSignUpText.text = @"";
             UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"congratulation" message:@"Successfully registered" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
             [alert show];
+            
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+            UserInfoViewController *infoView = [storyboard instantiateViewControllerWithIdentifier:@"UserInfoViewController"];
+            [self.navigationController pushViewController:infoView animated:YES];
+
             // Hooray! Let them use the app now.
         } else {
             UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Fail" message:@"Unable to register" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];

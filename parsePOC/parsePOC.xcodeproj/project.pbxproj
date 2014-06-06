@@ -11,6 +11,8 @@
 		2C064C07190A394B000A4DF7 /* fbbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C064C06190A394B000A4DF7 /* fbbutton.png */; };
 		2C064C0A190A4254000A4DF7 /* FbUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C064C09190A4254000A4DF7 /* FbUserViewController.m */; };
 		2C064C0C190A5FF0000A4DF7 /* TableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C064C0B190A5FF0000A4DF7 /* TableHeader.xib */; };
+		2C156C05190E3893002E706F /* BlogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C156C02190E3893002E706F /* BlogTableViewController.m */; };
+		2C156C06190E3893002E706F /* NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C156C04190E3893002E706F /* NewPostViewController.m */; };
 		2C19E15C190644160003CF2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C19E15B190644160003CF2E /* Foundation.framework */; };
 		2C19E15E190644160003CF2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C19E15D190644160003CF2E /* CoreGraphics.framework */; };
 		2C19E160190644160003CF2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C19E15F190644160003CF2E /* UIKit.framework */; };
@@ -58,6 +60,10 @@
 		2C064C08190A4254000A4DF7 /* FbUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FbUserViewController.h; sourceTree = "<group>"; };
 		2C064C09190A4254000A4DF7 /* FbUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 2; path = FbUserViewController.m; sourceTree = "<group>"; };
 		2C064C0B190A5FF0000A4DF7 /* TableHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableHeader.xib; sourceTree = "<group>"; };
+		2C156C01190E3893002E706F /* BlogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogTableViewController.h; sourceTree = "<group>"; };
+		2C156C02190E3893002E706F /* BlogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogTableViewController.m; sourceTree = "<group>"; };
+		2C156C03190E3893002E706F /* NewPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPostViewController.h; sourceTree = "<group>"; };
+		2C156C04190E3893002E706F /* NewPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPostViewController.m; sourceTree = "<group>"; };
 		2C19E158190644160003CF2E /* parsePOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parsePOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C19E15B190644160003CF2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2C19E15D190644160003CF2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,6 +199,10 @@
 				2C19E1AE190675600003CF2E /* UserInfoViewController.m */,
 				2C064C08190A4254000A4DF7 /* FbUserViewController.h */,
 				2C064C09190A4254000A4DF7 /* FbUserViewController.m */,
+				2C156C01190E3893002E706F /* BlogTableViewController.h */,
+				2C156C02190E3893002E706F /* BlogTableViewController.m */,
+				2C156C03190E3893002E706F /* NewPostViewController.h */,
+				2C156C04190E3893002E706F /* NewPostViewController.m */,
 				2C064C06190A394B000A4DF7 /* fbbutton.png */,
 				2C064C0B190A5FF0000A4DF7 /* TableHeader.xib */,
 				2C19E173190644160003CF2E /* Images.xcassets */,
@@ -329,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C156C06190E3893002E706F /* NewPostViewController.m in Sources */,
 				2C19E1AF190675600003CF2E /* UserInfoViewController.m in Sources */,
 				2C19E172190644160003CF2E /* ParseLoginViewController.m in Sources */,
 				2C3B2A22190932E700D969BA /* IQKeyBoardManager.m in Sources */,
@@ -336,6 +347,7 @@
 				2C19E16C190644160003CF2E /* AppDelegate.m in Sources */,
 				2C19E1AC19066DBE0003CF2E /* ParseSignUpViewController.m in Sources */,
 				2C19E168190644160003CF2E /* main.m in Sources */,
+				2C156C05190E3893002E706F /* BlogTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

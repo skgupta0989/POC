@@ -54,7 +54,7 @@
         if (!error) {
             // Parse the data received
             NSDictionary *userData = (NSDictionary *)result;
-            
+            NSLog(@"fb details %@",userData);
             NSString *facebookID = userData[@"id"];
             
             NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
@@ -89,7 +89,7 @@
             if ([pictureURL absoluteString]) {
                 userProfile[@"pictureURL"] = [pictureURL absoluteString];
             }
-            
+             NSLog(@"userprofile details %@",userProfile);
             [[PFUser currentUser] setObject:userProfile forKey:@"profile"];
             [[PFUser currentUser] saveInBackground];
             
