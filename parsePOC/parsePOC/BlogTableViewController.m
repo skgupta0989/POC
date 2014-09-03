@@ -32,7 +32,7 @@
 //        self.paginationEnabled = YES;
         
         // The number of objects to show per page
-//        self.objectsPerPage = 3;
+//        self.objectsPerPage = 5;
     }
     return self;
 }
@@ -120,19 +120,8 @@
 //     orderby asc
     
      PFQuery *query =[PFQuery queryWithClassName:self.parseClassName];
-    [query whereKey:@"author" equalTo:[PFUser currentUser]];
-//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-//        if (!error) {
-//            
-//            
-//            for (PFObject *object in objects) {
-//                NSLog(@"%@", object.objectId);
-//            }
-////            NSLog(@"values = %@",objects);
-//        }else{
-//            
-//        }
-//    }];
+//    [query whereKey:@"author" equalTo:[PFUser currentUser]];
+
   
     // If no objects are loaded in memory, we look to the cache first to fill the table
     // and then subsequently do a query against the network.

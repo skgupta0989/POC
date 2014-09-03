@@ -24,10 +24,10 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
   
     
-    PFACL *defaultACL = [PFACL ACL];
-    [defaultACL setPublicReadAccess:YES];
-    [defaultACL setPublicWriteAccess:YES];
-    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
+//    PFACL *defaultACL = [PFACL ACL];
+//    [defaultACL setPublicReadAccess:YES];
+//    [defaultACL setPublicWriteAccess:YES];
+//    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
     
     [application registerForRemoteNotificationTypes:
                         UIRemoteNotificationTypeBadge |

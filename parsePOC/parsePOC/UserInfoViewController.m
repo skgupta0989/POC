@@ -37,6 +37,9 @@
     UIBarButtonItem *blogButton = [[UIBarButtonItem alloc] initWithTitle:@"Blog" style:UIBarButtonItemStyleBordered target:self action:@selector(blogButtonClicked:)];
     self.navigationItem.leftBarButtonItem = blogButton;
     
+//    PFObject *myPost = [PFObject objectWithClassName:@"Post5"];
+//    [myPost addObject:@[@"flying", @"kungfu"] forKey:@"skills"];
+//    [myPost saveInBackground];
     
 //    NSNumber *number = @42;
 //    NSString *str = @"sandeep";
@@ -52,16 +55,16 @@
 //    list = [NSArray arrayWithObjects:@"Aston Martin",
 //            @"Lotus", @"Jaguar", @"Bentley", nil];
 //    
-//    NSArray *list1 = [NSArray alloc];
-//    list1 = [NSArray arrayWithObjects:@"A",
-//            @"L", @"J", @"B", nil];
-//    
-//    PFObject *myPost = [PFObject objectWithClassName:@"Post2"];
-//    [myPost addObject:list forKey:@"name"];
-//    
+    NSArray *list1 = [NSArray alloc];
+    list1 = [NSArray arrayWithObjects:@"A",
+            @"L", @"J", @"B", nil];
+//
+    PFObject *myPost1 = [PFObject objectWithClassName:@"Post2"];
+    [myPost1 addObject:list1 forKey:@"name"];
+//
 //    
 //    myPost[@"myArray"] = list1;
-//    [myPost saveInBackground];
+    [myPost1 saveInBackground];
     
 //    PFQuery *query = [PFQuery queryWithClassName:@"Post2"];
 //    [query whereKey:@"myArray" equalTo:@"A"];
@@ -119,6 +122,7 @@
     PFObject *userInfo = [PFObject objectWithClassName:@"PushObject"];
     userInfo[@"company_name"] = self.companyNameText.text;
     userInfo[@"telephone_number"] = self.telephoneNumText.text;
+    
     if ([self.companyNameText.text isEqual: @"" ]|| [self.telephoneNumText.text isEqual: @""]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"Value can't be null " delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
         [alert show];

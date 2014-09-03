@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C4ABD9F19AB3777005B5AAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4ABD9E19AB3777005B5AAE /* Foundation.framework */; };
+		2C4ABDA119AB3777005B5AAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4ABDA019AB3777005B5AAE /* CoreGraphics.framework */; };
+		2C4ABDA319AB3777005B5AAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4ABDA219AB3777005B5AAE /* UIKit.framework */; };
+		2C4ABDA919AB3777005B5AAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4ABDA719AB3777005B5AAE /* InfoPlist.strings */; };
+		2C4ABDAB19AB3777005B5AAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4ABDAA19AB3777005B5AAE /* main.m */; };
+		2C4ABDAF19AB3777005B5AAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4ABDAE19AB3777005B5AAE /* AppDelegate.m */; };
+		2C4ABDB219AB3777005B5AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4ABDB019AB3777005B5AAE /* Main.storyboard */; };
+		2C4ABDB519AB3777005B5AAE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4ABDB419AB3777005B5AAE /* MainViewController.m */; };
+		2C4ABDB719AB3777005B5AAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4ABDB619AB3777005B5AAE /* Images.xcassets */; };
+		2C4ABDBE19AB3777005B5AAE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4ABDBD19AB3777005B5AAE /* XCTest.framework */; };
+		2C4ABDBF19AB3777005B5AAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4ABD9E19AB3777005B5AAE /* Foundation.framework */; };
+		2C4ABDC019AB3777005B5AAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4ABDA219AB3777005B5AAE /* UIKit.framework */; };
+		2C4ABDC819AB3777005B5AAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C4ABDC619AB3777005B5AAE /* InfoPlist.strings */; };
+		2C4ABDCA19AB3777005B5AAE /* RadialDialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4ABDC919AB3777005B5AAE /* RadialDialTests.m */; };
+		2C4ABDD519AB40A9005B5AAE /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4ABDD419AB40A9005B5AAE /* CircleViewController.m */; };
+		2C4ABDD719AB44EA005B5AAE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4ABDD619AB44EA005B5AAE /* QuartzCore.framework */; };
+		2C4ABDDA19AB522D005B5AAE /* DrawCircleParts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4ABDD919AB522D005B5AAE /* DrawCircleParts.m */; };
+		2C4ABDDD19AB691F005B5AAE /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4ABDDC19AB691F005B5AAE /* Common.m */; };
+		2C64D55219ADBEEE004B8D72 /* CircleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C64D55119ADBEEE004B8D72 /* CircleGestureRecognizer.m */; };
+		2C6AEC2419AF0DDE0093F903 /* SelectedDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AEC2319AF0DDE0093F903 /* SelectedDay.m */; };
+		2C6AEC2719AF3B580093F903 /* CircleOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AEC2619AF3B580093F903 /* CircleOverlayView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C4ABDC119AB3777005B5AAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C4ABD9319AB3777005B5AAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4ABD9A19AB3777005B5AAE;
+			remoteInfo = RadialDial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C4ABD9B19AB3777005B5AAE /* RadialDial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadialDial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4ABD9E19AB3777005B5AAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C4ABDA019AB3777005B5AAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C4ABDA219AB3777005B5AAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C4ABDA619AB3777005B5AAE /* RadialDial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadialDial-Info.plist"; sourceTree = "<group>"; };
+		2C4ABDA819AB3777005B5AAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C4ABDAA19AB3777005B5AAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C4ABDAC19AB3777005B5AAE /* RadialDial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RadialDial-Prefix.pch"; sourceTree = "<group>"; };
+		2C4ABDAD19AB3777005B5AAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C4ABDAE19AB3777005B5AAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C4ABDB119AB3777005B5AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C4ABDB319AB3777005B5AAE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2C4ABDB419AB3777005B5AAE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2C4ABDB619AB3777005B5AAE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2C4ABDBC19AB3777005B5AAE /* RadialDialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadialDialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4ABDBD19AB3777005B5AAE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2C4ABDC519AB3777005B5AAE /* RadialDialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadialDialTests-Info.plist"; sourceTree = "<group>"; };
+		2C4ABDC719AB3777005B5AAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C4ABDC919AB3777005B5AAE /* RadialDialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadialDialTests.m; sourceTree = "<group>"; };
+		2C4ABDD319AB40A9005B5AAE /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		2C4ABDD419AB40A9005B5AAE /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		2C4ABDD619AB44EA005B5AAE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2C4ABDD819AB522D005B5AAE /* DrawCircleParts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawCircleParts.h; sourceTree = "<group>"; };
+		2C4ABDD919AB522D005B5AAE /* DrawCircleParts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawCircleParts.m; sourceTree = "<group>"; };
+		2C4ABDDB19AB691F005B5AAE /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		2C4ABDDC19AB691F005B5AAE /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		2C64D55019ADBEEE004B8D72 /* CircleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGestureRecognizer.h; sourceTree = "<group>"; };
+		2C64D55119ADBEEE004B8D72 /* CircleGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGestureRecognizer.m; sourceTree = "<group>"; };
+		2C6AEC2219AF0DDE0093F903 /* SelectedDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedDay.h; sourceTree = "<group>"; };
+		2C6AEC2319AF0DDE0093F903 /* SelectedDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedDay.m; sourceTree = "<group>"; };
+		2C6AEC2519AF3B580093F903 /* CircleOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleOverlayView.h; sourceTree = "<group>"; };
+		2C6AEC2619AF3B580093F903 /* CircleOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleOverlayView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C4ABD9819AB3777005B5AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4ABDD719AB44EA005B5AAE /* QuartzCore.framework in Frameworks */,
+				2C4ABDA119AB3777005B5AAE /* CoreGraphics.framework in Frameworks */,
+				2C4ABDA319AB3777005B5AAE /* UIKit.framework in Frameworks */,
+				2C4ABD9F19AB3777005B5AAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4ABDB919AB3777005B5AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4ABDBE19AB3777005B5AAE /* XCTest.framework in Frameworks */,
+				2C4ABDC019AB3777005B5AAE /* UIKit.framework in Frameworks */,
+				2C4ABDBF19AB3777005B5AAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C4ABD9219AB3777005B5AAE = {
+			isa = PBXGroup;
+			children = (
+				2C4ABDA419AB3777005B5AAE /* RadialDial */,
+				2C4ABDC319AB3777005B5AAE /* RadialDialTests */,
+				2C4ABD9D19AB3777005B5AAE /* Frameworks */,
+				2C4ABD9C19AB3777005B5AAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C4ABD9C19AB3777005B5AAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C4ABD9B19AB3777005B5AAE /* RadialDial.app */,
+				2C4ABDBC19AB3777005B5AAE /* RadialDialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C4ABD9D19AB3777005B5AAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C4ABDD619AB44EA005B5AAE /* QuartzCore.framework */,
+				2C4ABD9E19AB3777005B5AAE /* Foundation.framework */,
+				2C4ABDA019AB3777005B5AAE /* CoreGraphics.framework */,
+				2C4ABDA219AB3777005B5AAE /* UIKit.framework */,
+				2C4ABDBD19AB3777005B5AAE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C4ABDA419AB3777005B5AAE /* RadialDial */ = {
+			isa = PBXGroup;
+			children = (
+				2C4ABDAD19AB3777005B5AAE /* AppDelegate.h */,
+				2C4ABDAE19AB3777005B5AAE /* AppDelegate.m */,
+				2C4ABDB019AB3777005B5AAE /* Main.storyboard */,
+				2C4ABDB319AB3777005B5AAE /* MainViewController.h */,
+				2C4ABDB419AB3777005B5AAE /* MainViewController.m */,
+				2C4ABDD319AB40A9005B5AAE /* CircleViewController.h */,
+				2C4ABDD419AB40A9005B5AAE /* CircleViewController.m */,
+				2C4ABDD819AB522D005B5AAE /* DrawCircleParts.h */,
+				2C4ABDD919AB522D005B5AAE /* DrawCircleParts.m */,
+				2C64D55019ADBEEE004B8D72 /* CircleGestureRecognizer.h */,
+				2C64D55119ADBEEE004B8D72 /* CircleGestureRecognizer.m */,
+				2C6AEC2219AF0DDE0093F903 /* SelectedDay.h */,
+				2C6AEC2319AF0DDE0093F903 /* SelectedDay.m */,
+				2C6AEC2519AF3B580093F903 /* CircleOverlayView.h */,
+				2C6AEC2619AF3B580093F903 /* CircleOverlayView.m */,
+				2C4ABDDB19AB691F005B5AAE /* Common.h */,
+				2C4ABDDC19AB691F005B5AAE /* Common.m */,
+				2C4ABDA519AB3777005B5AAE /* Supporting Files */,
+				2C4ABDB619AB3777005B5AAE /* Images.xcassets */,
+			);
+			path = RadialDial;
+			sourceTree = "<group>";
+		};
+		2C4ABDA519AB3777005B5AAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C4ABDA619AB3777005B5AAE /* RadialDial-Info.plist */,
+				2C4ABDA719AB3777005B5AAE /* InfoPlist.strings */,
+				2C4ABDAA19AB3777005B5AAE /* main.m */,
+				2C4ABDAC19AB3777005B5AAE /* RadialDial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C4ABDC319AB3777005B5AAE /* RadialDialTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4ABDC919AB3777005B5AAE /* RadialDialTests.m */,
+				2C4ABDC419AB3777005B5AAE /* Supporting Files */,
+			);
+			path = RadialDialTests;
+			sourceTree = "<group>";
+		};
+		2C4ABDC419AB3777005B5AAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C4ABDC519AB3777005B5AAE /* RadialDialTests-Info.plist */,
+				2C4ABDC619AB3777005B5AAE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C4ABD9A19AB3777005B5AAE /* RadialDial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4ABDCD19AB3777005B5AAE /* Build configuration list for PBXNativeTarget "RadialDial" */;
+			buildPhases = (
+				2C4ABD9719AB3777005B5AAE /* Sources */,
+				2C4ABD9819AB3777005B5AAE /* Frameworks */,
+				2C4ABD9919AB3777005B5AAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadialDial;
+			productName = RadialDial;
+			productReference = 2C4ABD9B19AB3777005B5AAE /* RadialDial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C4ABDBB19AB3777005B5AAE /* RadialDialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4ABDD019AB3777005B5AAE /* Build configuration list for PBXNativeTarget "RadialDialTests" */;
+			buildPhases = (
+				2C4ABDB819AB3777005B5AAE /* Sources */,
+				2C4ABDB919AB3777005B5AAE /* Frameworks */,
+				2C4ABDBA19AB3777005B5AAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4ABDC219AB3777005B5AAE /* PBXTargetDependency */,
+			);
+			name = RadialDialTests;
+			productName = RadialDialTests;
+			productReference = 2C4ABDBC19AB3777005B5AAE /* RadialDialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C4ABD9319AB3777005B5AAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = neevtech;
+				TargetAttributes = {
+					2C4ABDBB19AB3777005B5AAE = {
+						TestTargetID = 2C4ABD9A19AB3777005B5AAE;
+					};
+				};
+			};
+			buildConfigurationList = 2C4ABD9619AB3777005B5AAE /* Build configuration list for PBXProject "RadialDial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C4ABD9219AB3777005B5AAE;
+			productRefGroup = 2C4ABD9C19AB3777005B5AAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C4ABD9A19AB3777005B5AAE /* RadialDial */,
+				2C4ABDBB19AB3777005B5AAE /* RadialDialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C4ABD9919AB3777005B5AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4ABDB719AB3777005B5AAE /* Images.xcassets in Resources */,
+				2C4ABDA919AB3777005B5AAE /* InfoPlist.strings in Resources */,
+				2C4ABDB219AB3777005B5AAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4ABDBA19AB3777005B5AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4ABDC819AB3777005B5AAE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C4ABD9719AB3777005B5AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4ABDDD19AB691F005B5AAE /* Common.m in Sources */,
+				2C4ABDB519AB3777005B5AAE /* MainViewController.m in Sources */,
+				2C64D55219ADBEEE004B8D72 /* CircleGestureRecognizer.m in Sources */,
+				2C4ABDAF19AB3777005B5AAE /* AppDelegate.m in Sources */,
+				2C4ABDDA19AB522D005B5AAE /* DrawCircleParts.m in Sources */,
+				2C6AEC2719AF3B580093F903 /* CircleOverlayView.m in Sources */,
+				2C4ABDD519AB40A9005B5AAE /* CircleViewController.m in Sources */,
+				2C4ABDAB19AB3777005B5AAE /* main.m in Sources */,
+				2C6AEC2419AF0DDE0093F903 /* SelectedDay.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4ABDB819AB3777005B5AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4ABDCA19AB3777005B5AAE /* RadialDialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C4ABDC219AB3777005B5AAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4ABD9A19AB3777005B5AAE /* RadialDial */;
+			targetProxy = 2C4ABDC119AB3777005B5AAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C4ABDA719AB3777005B5AAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C4ABDA819AB3777005B5AAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2C4ABDB019AB3777005B5AAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C4ABDB119AB3777005B5AAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C4ABDC619AB3777005B5AAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C4ABDC719AB3777005B5AAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C4ABDCB19AB3777005B5AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C4ABDCC19AB3777005B5AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C4ABDCE19AB3777005B5AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadialDial/RadialDial-Prefix.pch";
+				INFOPLIST_FILE = "RadialDial/RadialDial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C4ABDCF19AB3777005B5AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadialDial/RadialDial-Prefix.pch";
+				INFOPLIST_FILE = "RadialDial/RadialDial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2C4ABDD119AB3777005B5AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RadialDial.app/RadialDial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadialDial/RadialDial-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RadialDialTests/RadialDialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2C4ABDD219AB3777005B5AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RadialDial.app/RadialDial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadialDial/RadialDial-Prefix.pch";
+				INFOPLIST_FILE = "RadialDialTests/RadialDialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C4ABD9619AB3777005B5AAE /* Build configuration list for PBXProject "RadialDial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4ABDCB19AB3777005B5AAE /* Debug */,
+				2C4ABDCC19AB3777005B5AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4ABDCD19AB3777005B5AAE /* Build configuration list for PBXNativeTarget "RadialDial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4ABDCE19AB3777005B5AAE /* Debug */,
+				2C4ABDCF19AB3777005B5AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4ABDD019AB3777005B5AAE /* Build configuration list for PBXNativeTarget "RadialDialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4ABDD119AB3777005B5AAE /* Debug */,
+				2C4ABDD219AB3777005B5AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C4ABD9319AB3777005B5AAE /* Project object */;
+}

@@ -76,7 +76,7 @@
 
 - (IBAction)SignInButtonClicked:(id)sender {
     NSLog(@"%@",self.userNameText.text);
-    [_activityIndicator startAnimating];
+//    [_activityIndicator startAnimating];
     [PFUser logInWithUsernameInBackground:self.userNameText.text password:self.passWordText.text block:^(PFUser *user, NSError *error) {
         
         if (user) {
@@ -91,7 +91,7 @@
             
         } else {
             // The login failed. Check error to see why.
-            [_activityIndicator stopAnimating];
+//            [_activityIndicator stopAnimating];
             UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Error" message:@"Login Failed" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
             [alert show];
             
